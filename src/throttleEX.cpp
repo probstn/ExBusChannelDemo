@@ -1,7 +1,7 @@
 #include <Arduino.h>
 
 uint8_t throttle = 0;
-uint16_t channel1 = 8000;
+uint16_t channel1 = 8040;
 
 uint8_t data[38] = {
     0x3E,
@@ -94,7 +94,7 @@ void loop()
       {
         throttle-=1;
       }
-      channel1 = throttle * (16000-8000) / (100-0) + 8000;
+      channel1 = throttle * (16080-8040) / (100-0) + 8040;
 
       Serial.print(channel1);
       Serial.print(" ");
