@@ -15,5 +15,6 @@ void loop()
   delay(1000);
 
   exbus.sendTelRequest(2);
+  
   // exbus.receiveMessage();
 }
